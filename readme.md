@@ -28,8 +28,8 @@ toy::ConfigLoader<toy::JsonParser> config;
 // 读取同级目录下的文件所有配置文件，第二个参数指定配置文件的后缀名
 config.LoadAll(".", ".json");
 // 通过文件名获取解析后的数据，Get() 返回值的类型由解析器决定
-auto data = config.Get("test");
-auto data = config.Get("test2");
+auto data1 = config.Get("test");
+auto data2 = config.Get("test2");
 ```
 
 ### 自定义配置文件解析器
